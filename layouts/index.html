@@ -1,0 +1,28 @@
+{{ define "main" -}}
+<div class="post">
+  <h1>Welcome to Reliability Report 🎉</h1>
+  <p>This site is a <a href="/contribute/">collaborative effort</a> to brings to you relevant curated content and the latest news about <strong>Reliability Engineering</strong>, that includes SRE, DevOps and Cloud Natve topics.</p>
+  <p>Subscribe via our <a href="https://reliability.re/index.xml" target="_blank" rel="noreferrer noopener nofollow">RSS feed</a>. New integrations are coming, like a Telegram Bot, a Twitter account and a weekly newsletter. Stay tuned!</p>
+</div>
+
+<hr>
+
+<div class="post">
+  <h1>Latest Content</h1>
+</div>
+
+<div class="posts">
+{{ range where .Site.RegularPages "Type" "links" -}}
+<article class="post">
+  <h1 class="post-title">
+    <a href="{{ .Params.link }}" rel="noreferrer noopener nofollow" target="_blank">{{ .Title }}</a>
+  </h1>
+  <div style="margin-bottom: 15px;">
+  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="post-date" style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+  <span>{{ if .Params.github_username }} curated by <a href="https://github.com/{{ .Params.github_username }}" rel="noreferrer noopener nofollow" target="_blank">@{{ .Params.github_username }}</a>{{ end }}</span>
+  </div>
+  {{ .Content }}
+</article>
+{{- end }}
+</div>
+{{- end }}

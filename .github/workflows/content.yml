@@ -1,0 +1,32 @@
+name: Read issue payload
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Show event payload
+      run: |
+        echo $GITHUB_REPOSITORY
+        echo $GITHUB_EVENT_PATH
+        ./payload.py $GITHUB_EVENT_PATH
+        git status
+        git add -A
+    - name: Set issue number
+      id: issue-number
+      run: |
+        number=$(jq -r ".issue.number" $GITHUB_EVENT_PATH)
+        echo ::set-output name=number::$number
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3 
+      with:
+        branch: "content/update-${{ steps.issue-number.outputs.number }}"
+        commit-message: "[automated change] Closes #${{ steps.issue-number.outputs.number }}"
+        title: "Content curated by ${{ github.actor }}"
+        body: "Content curated by @${{ github.actor }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
+        delete-branch: true

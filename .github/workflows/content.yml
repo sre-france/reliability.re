@@ -14,7 +14,7 @@ jobs:
       run: |
         echo $GITHUB_REPOSITORY
         echo $GITHUB_EVENT_PATH
-        ./payload.py $GITHUB_EVENT_PATH
+        ./bin/create-content.py $GITHUB_EVENT_PATH
         git status
         git add -A
     - name: Set issue number

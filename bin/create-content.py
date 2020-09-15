@@ -25,7 +25,7 @@ def main(filename):
     created_at = data["issue"]["created_at"]
     user = data["issue"]["user"]["login"]
     body = data["issue"]["body"]
-    url = body.splitlines()[0]
+    url = body.splitlines()[0].replace("url: ", "")
     description = "\n".join(body.splitlines()[2:])
     post_filename = slugify(created_at, title)
     content = template.format(title=title, created_at=created_at, url=url, user=user, description=description)

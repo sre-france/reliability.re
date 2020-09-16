@@ -2,7 +2,7 @@ name: Read issue payload
 
 on:
   issues:
-    types: [opened, edited, labeled]
+    types: [opened, edited]
 
 jobs:
   content:

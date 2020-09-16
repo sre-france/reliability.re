@@ -51,8 +51,8 @@ suggestion, idea or fix for this site using a regular Github issue.
 ## How to contribute
 
 In order to start contributing you just need a [Github](https://github.com/)
-account to open an issue using this template.
+account to open [an issue using this template](https://github.com/sre-paris/reliability.re/issues/new?labels=content&template=new-content.md&title=Content%27s+title).
 
 Every new issue will automatically generate a pull request using [Github
-Actions](https://github.com/features/actions) that will be reviewed and merged
+Actions](https://github.com/sre-paris/reliability.re/actions) that will be reviewed and merged
 by a maintainer. A few minutes later your content will be published.

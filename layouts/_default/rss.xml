@@ -30,7 +30,7 @@
       <title>{{ .Title }}</title>
       <link>{{ .Params.link }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Params.Author.email }}<author>{{.}}{{ with $.Params.Author.name }} ({{.}}){{end}}</author>{{end}}
+      {{ with .Params.github_username }}<author>{{.}}@users.noreply.github.com ({{.}})</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
     </item>

@@ -15,13 +15,16 @@
 {{ range where .Site.RegularPages "Type" "links" -}}
 <article class="post">
   <h1 class="post-title">
-    <a href="{{ .Params.link }}" rel="noreferrer noopener nofollow" target="_blank">{{ .Title }}</a>
+    {{ .Title }}
   </h1>
-  <div style="margin-bottom: 15px;">
+  <div style="margin-bottom: 10px; font-size: 16px;">
   <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="post-date" style="display:inline;">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
   <span>{{ if .Params.github_username }} curated by <a href="https://github.com/{{ .Params.github_username }}" rel="noreferrer noopener nofollow" target="_blank">@{{ .Params.github_username }}</a>{{ end }}</span>
   </div>
   {{ .Content }}
+  <span style="font-size: 16px;"><em>
+  Source: <a href="{{ .Params.link }}" rel="noreferrer noopener nofollow" target="_blank">{{ .Params.link }}</a>
+  </em></span>
 </article>
 {{- end }}
 </div>

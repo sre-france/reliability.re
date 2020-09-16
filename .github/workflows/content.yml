@@ -6,6 +6,7 @@ on:
 
 jobs:
   content:
+    if: contains(github.event.issue.labels.*.name, 'content')
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

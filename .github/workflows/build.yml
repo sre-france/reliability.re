@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           submodules: recursive
       - name: Install Hugo
         run: |

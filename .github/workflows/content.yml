@@ -1,4 +1,4 @@
-name: Read issue payload
+name: Parse Issues
 
 on:
   issues:

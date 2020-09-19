@@ -1,114 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Reliability Report 📰</title>
-    <link>https://reliability.re/</link>
-    <description>A collaborative curated content site about Reliability Engineering</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2020 16:00:15 +0200</lastBuildDate>
-    
-	<atom:link href="https://reliability.re/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Debugging Go in prod using eBPF</title>
-      <link>https://blog.pixielabs.ai/blog/ebpf-function-tracing/post/</link>
-      <pubDate>Fri, 18 Sep 2020 18:46:54 +0000</pubDate>
-      <author>pabluk@users.noreply.github.com (pabluk)</author>
-      <guid>https://reliability.re/links/2020-09-18-debugging-go-in-prod-using-ebpf/</guid>
-      <description>&lt;p&gt;This is the first part of a series of articles on how to debug Go programs in binary state using &lt;a href=&#34;https://ebpf.io/&#34;&gt;eBPF&lt;/a&gt; and it&amp;rsquo;s also a very good introduction to that kernel feature. By the way, I think eBPF will bring a lot of new observability tools, for example the new &lt;a href=&#34;https://docs.datadoghq.com/network_performance_monitoring/installation/?tab=agent&#34;&gt;Network Performance Monitoring&lt;/a&gt; of Datadog.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Forbes Cloud 100 list</title>
-      <link>https://www.forbes.com/cloud100/#25aca7525f94</link>
-      <pubDate>Thu, 17 Sep 2020 08:48:42 +0000</pubDate>
-      <author>tormath1@users.noreply.github.com (tormath1)</author>
-      <guid>https://reliability.re/links/2020-09-17-forbes-cloud-100-list/</guid>
-      <description>&lt;p&gt;Through this list is fun to see a few elements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;only a few companies are not based in the USA (5)&lt;/li&gt;
-&lt;li&gt;the number of employees does not seem to impact the value ($) of the company&lt;/li&gt;
-&lt;li&gt;2 DevOps company in the top 20&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Eliminating Toil</title>
-      <link>https://landing.google.com/sre/sre-book/chapters/eliminating-toil/</link>
-      <pubDate>Wed, 16 Sep 2020 07:07:22 +0000</pubDate>
-      <author>pabluk@users.noreply.github.com (pabluk)</author>
-      <guid>https://reliability.re/links/2020-09-16-eliminating-toil/</guid>
-      <description>&lt;p&gt;This chapter from the &lt;a href=&#34;https://landing.google.com/sre/books/&#34;&gt;first Site Reliability Engineering book&lt;/a&gt; describes clearly the definition of toil, how to measure it, and it provides some ideas to handle it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contributing</title>
-      <link></link>
-      <pubDate>Tue, 15 Sep 2020 16:00:15 +0200</pubDate>
-      
-      <guid>https://reliability.re/contribute/</guid>
-      <description>&lt;p&gt;Thank you for your interest in collaborate to this project 🎉&lt;/p&gt;
-&lt;p&gt;As a collaborative project, contributions are welcome and &lt;strong&gt;open to anyone&lt;/strong&gt;,
-you just need a &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt; account and to accept licensing
-your contribution under a &lt;a href=&#34;https://creativecommons.org/&#34;&gt;Creative Commons&lt;/a&gt;
-license &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;BY-SA 4.0&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;why-contribute&#34;&gt;Why contribute?&lt;/h2&gt;
-&lt;p&gt;There are lot of reasons to collaborate, here are some of
-them:&lt;/p&gt;
-&lt;p&gt;🤓 &lt;strong&gt;Develop your knowledge&lt;/strong&gt;: summarizing information in a condensed and
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reliability Report 📰</title><link>https://reliability.re/</link><description>A collaborative curated content site about Reliability Engineering</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Sep 2020 16:00:15 +0200</lastBuildDate><atom:link href="https://reliability.re/index.xml" rel="self" type="application/rss+xml"/><item><title>Debugging Go in prod using eBPF</title><link>https://blog.pixielabs.ai/blog/ebpf-function-tracing/post/</link><pubDate>Fri, 18 Sep 2020 18:46:54 +0000</pubDate><author>pabluk@users.noreply.github.com (pabluk)</author><guid>https://reliability.re/links/2020-09-18-debugging-go-in-prod-using-ebpf/</guid><description>&lt;p>This is the first part of a series of articles on how to debug Go programs in binary state using &lt;a href="https://ebpf.io/">eBPF&lt;/a> and it&amp;rsquo;s also a very good introduction to that kernel feature. By the way, I think eBPF will bring a lot of new observability tools, for example the new &lt;a href="https://docs.datadoghq.com/network_performance_monitoring/installation/?tab=agent">Network Performance Monitoring&lt;/a> of Datadog.&lt;/p></description></item><item><title>Forbes Cloud 100 list</title><link>https://www.forbes.com/cloud100/#25aca7525f94</link><pubDate>Thu, 17 Sep 2020 08:48:42 +0000</pubDate><author>tormath1@users.noreply.github.com (tormath1)</author><guid>https://reliability.re/links/2020-09-17-forbes-cloud-100-list/</guid><description>&lt;p>Through this list is fun to see a few elements:&lt;/p>
+&lt;ul>
+&lt;li>only a few companies are not based in the USA (5)&lt;/li>
+&lt;li>the number of employees does not seem to impact the value ($) of the company&lt;/li>
+&lt;li>2 DevOps company in the top 20&lt;/li>
+&lt;/ul></description></item><item><title>Eliminating Toil</title><link>https://landing.google.com/sre/sre-book/chapters/eliminating-toil/</link><pubDate>Wed, 16 Sep 2020 07:07:22 +0000</pubDate><author>pabluk@users.noreply.github.com (pabluk)</author><guid>https://reliability.re/links/2020-09-16-eliminating-toil/</guid><description>&lt;p>This chapter from the &lt;a href="https://landing.google.com/sre/books/">first Site Reliability Engineering book&lt;/a> describes clearly the definition of toil, how to measure it, and it provides some ideas to handle it.&lt;/p></description></item><item><title>Contributing</title><link/><pubDate>Tue, 15 Sep 2020 16:00:15 +0200</pubDate><guid>https://reliability.re/contribute/</guid><description>&lt;p>Thank you for your interest in collaborate to this project 🎉&lt;/p>
+&lt;p>As a collaborative project, contributions are welcome and &lt;strong>open to anyone&lt;/strong>,
+you just need a &lt;a href="https://github.com/">Github&lt;/a> account and to accept licensing
+your contribution under a &lt;a href="https://creativecommons.org/">Creative Commons&lt;/a>
+license &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0&lt;/a>.&lt;/p>
+&lt;h2 id="why-contribute">Why contribute?&lt;/h2>
+&lt;p>There are lot of reasons to collaborate, here are some of
+them:&lt;/p>
+&lt;p>🤓 &lt;strong>Develop your knowledge&lt;/strong>: summarizing information in a condensed and
 understandable way is great exercise! It requires to dig deeply in a specific
-topic and that will leads you to a better understanding of it.&lt;/p&gt;
-&lt;p&gt;📻 &lt;strong&gt;Stay informed&lt;/strong&gt;: spending time finding, filtering, and reading information
+topic and that will leads you to a better understanding of it.&lt;/p>
+&lt;p>📻 &lt;strong>Stay informed&lt;/strong>: spending time finding, filtering, and reading information
 across internet keeps you up to date with all the latest news of the
-Reliability world.&lt;/p&gt;
-&lt;p&gt;🤗 &lt;strong&gt;Helping others&lt;/strong&gt;: no less important&amp;hellip; &lt;em&gt;sharing is caring&lt;/em&gt;, because
+Reliability world.&lt;/p>
+&lt;p>🤗 &lt;strong>Helping others&lt;/strong>: no less important&amp;hellip; &lt;em>sharing is caring&lt;/em>, because
 sharing your knowledges with others can help them to find relevant content and
-spark new ideas.&lt;/p&gt;
-&lt;h2 id=&#34;what-kind-of-content-can-i-contribute&#34;&gt;What kind of content can I contribute?&lt;/h2&gt;
-&lt;p&gt;You can share any content with a public URL like:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Articles&lt;/li&gt;
-&lt;li&gt;Software projects&lt;/li&gt;
-&lt;li&gt;Presentations (video or slides)&lt;/li&gt;
-&lt;li&gt;Training material&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;related to any of the following Reliability Engineering topics:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SRE (Site Reliability Engineering)&lt;/li&gt;
-&lt;li&gt;Cloud Systems Reliability Engineer&lt;/li&gt;
-&lt;li&gt;Database reliability&lt;/li&gt;
-&lt;li&gt;DevOps&lt;/li&gt;
-&lt;li&gt;Cloud Native&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;and please don&amp;rsquo;t hesitate to open an issue or propose a pull request for any
-suggestion, idea or fix for this site using a regular Github issue.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-contribute&#34;&gt;How to contribute&lt;/h2&gt;
-&lt;p&gt;In order to start contributing you just need a &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt;
-account to open &lt;a href=&#34;https://github.com/sre-paris/reliability.re/issues/new?labels=content&amp;amp;template=new-content.md&amp;amp;title=Content%27s+title&#34;&gt;an issue using this template&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Every new issue will automatically generate a pull request using &lt;a href=&#34;https://github.com/sre-paris/reliability.re/actions&#34;&gt;Github
-Actions&lt;/a&gt; that will be reviewed and merged
-by a maintainer. A few minutes later your content will be published.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why Is Site Reliability Engineering Important</title>
-      <link>https://devops.com/why-is-site-reliability-engineering-important/</link>
-      <pubDate>Mon, 13 Jul 2020 20:58:19 +0200</pubDate>
-      <author>pabluk@users.noreply.github.com (pabluk)</author>
-      <guid>https://reliability.re/links/why-is-site-reliability-engineering-important/</guid>
-      <description>&lt;p&gt;This is a quote from the &lt;a href=&#34;https://landing.google.com/sre/sre-book/toc/index.html&#34;&gt;SRE book&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Site reliability engineering (SRE) is one of the fastest-growing enterprise roles and set of operational practices for managing services at scale.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You&amp;rsquo;ll find a clear introduction of these principles &lt;a href=&#34;https://landing.google.com/sre/sre-book/chapters/introduction&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+spark new ideas.&lt;/p>
+&lt;h2 id="what-kind-of-content-can-i-contribute">What kind of content can I contribute?&lt;/h2>
+&lt;p>You can share any content with a public URL like:&lt;/p>
+&lt;ul>
+&lt;li>Articles&lt;/li>
+&lt;li>Software projects&lt;/li>
+&lt;li>Presentations (video or slides)&lt;/li>
+&lt;li>Training material&lt;/li>
+&lt;/ul>
+&lt;p>related to any of the following Reliability Engineering topics:&lt;/p>
+&lt;ul>
+&lt;li>SRE (Site Reliability Engineering)&lt;/li>
+&lt;li>Cloud Systems Reliability Engineer&lt;/li>
+&lt;li>Database reliability&lt;/li>
+&lt;li>DevOps&lt;/li>
+&lt;li>Cloud Native&lt;/li>
+&lt;/ul>
+&lt;p>and please don&amp;rsquo;t hesitate to open an issue or propose a pull request for any
+suggestion, idea or fix for this site using a regular Github issue.&lt;/p>
+&lt;h2 id="how-to-contribute">How to contribute&lt;/h2>
+&lt;p>In order to start contributing you just need a &lt;a href="https://github.com/">Github&lt;/a>
+account to open &lt;a href="https://github.com/sre-paris/reliability.re/issues/new?labels=content&amp;amp;template=new-content.md&amp;amp;title=Content%27s+title">an issue using this template&lt;/a>.&lt;/p>
+&lt;p>Every new issue will automatically generate a pull request using &lt;a href="https://github.com/sre-paris/reliability.re/actions">Github
+Actions&lt;/a> that will be reviewed and merged
+by a maintainer. A few minutes later your content will be published.&lt;/p></description></item><item><title>Why Is Site Reliability Engineering Important</title><link>https://devops.com/why-is-site-reliability-engineering-important/</link><pubDate>Mon, 13 Jul 2020 20:58:19 +0200</pubDate><author>pabluk@users.noreply.github.com (pabluk)</author><guid>https://reliability.re/links/why-is-site-reliability-engineering-important/</guid><description>&lt;p>This is a quote from the &lt;a href="https://landing.google.com/sre/sre-book/toc/index.html">SRE book&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Site reliability engineering (SRE) is one of the fastest-growing enterprise roles and set of operational practices for managing services at scale.&lt;/p>
+&lt;/blockquote>
+&lt;p>You&amp;rsquo;ll find a clear introduction of these principles &lt;a href="https://landing.google.com/sre/sre-book/chapters/introduction">here&lt;/a>.&lt;/p></description></item></channel></rss>

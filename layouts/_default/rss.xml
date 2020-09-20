@@ -12,6 +12,7 @@
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+                   xmlns:rr="https://reliability.re/rss-ns-spec-1.0/"
                    xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
   <channel>
     <title>{{ .Site.Title }}</title>
@@ -35,6 +36,9 @@
       {{ with .Params.github_username }}<author>{{.}}@users.noreply.github.com ({{.}})</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
+      {{ with .Params.github_username }}<rr:github>{{.}}</rr:github>{{end}}
+      {{ with .Params.twitter_username }}<rr:twitter>{{.}}</rr:twitter>{{end}}
+      <rr:plain>{{ .Plain }}</rr:plain>
     </item>
     {{ end }}
   </channel>

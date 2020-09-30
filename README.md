@@ -2,6 +2,8 @@
 
 A collaborative curated content site about Reliability Engineering.
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
 ## Contributing
 
 Thank you for your interest in collaborate to this project :tada:
@@ -10,6 +12,10 @@ There are 2 kind of contributions for this project:
 
 1. If you want to share and publish content please follow [these instructions](content/contribute.md).
 2. For other contributions, like fixing typos, Github's workflows or improving static content, please see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Code of conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## Dev & Build
 

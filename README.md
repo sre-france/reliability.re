@@ -2,13 +2,14 @@
 
 A collaborative curated content site about Reliability Engineering.
 
-## Contribute
+## Contributing
 
 Thank you for your interest in collaborate to this project :tada:
 
-If you want to share and publish content please follow [these instructions](content/contribute.md). 
+There are 2 kind of contributions for this project:
 
-For other contributions, like fixing typos, Github's workflows or improving static content, please open a [blank issue](https://github.com/sre-paris/reliability.re/issues/new) or fork this repository and create a PR.
+1. If you want to share and publish content please follow [these instructions](content/contribute.md).
+2. For other contributions, like fixing typos, Github's workflows or improving static content, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Dev & Build
 

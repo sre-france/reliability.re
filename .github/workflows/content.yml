@@ -25,11 +25,16 @@ jobs:
       run: |
         number=$(jq -r ".issue.number" $GITHUB_EVENT_PATH)
         echo ::set-output name=number::$number
+    - name: Set issue author
+      id: issue-author
+      run: |
+        author=$(jq -r ".issue.user.login" $GITHUB_EVENT_PATH)
+        echo ::set-output name=author::$author
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3 
       with:
         branch: "content/update-${{ steps.issue-number.outputs.number }}"
         commit-message: "[automated change] Closes #${{ steps.issue-number.outputs.number }}"
-        title: "Content curated by ${{ github.actor }}"
-        body: "Content curated by @${{ github.actor }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
+        title: "Content curated by ${{ steps.issue-author.outputs.login }}"
+        body: "Content curated by @${{ steps.issue-author.outputs.login }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
         delete-branch: true

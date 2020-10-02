@@ -35,6 +35,6 @@ jobs:
       with:
         branch: "content/update-${{ steps.issue-number.outputs.number }}"
         commit-message: "[automated change] Closes #${{ steps.issue-number.outputs.number }}"
-        title: "Content curated by ${{ steps.issue-author.outputs.login }}"
-        body: "Content curated by @${{ steps.issue-author.outputs.login }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
+        title: "Content curated by ${{ steps.issue-author.outputs.author }}"
+        body: "Content curated by @${{ steps.issue-author.outputs.author }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
         delete-branch: true

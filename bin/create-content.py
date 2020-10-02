@@ -51,7 +51,7 @@ def main(filename):
     content = "---\n"
 
     title = data["issue"]["title"]
-    content += "title: %s\n" % title
+    content += 'title: "%s"\n' % title
 
     created_at = data["issue"]["created_at"]
     content += "date: %s\n" % created_at

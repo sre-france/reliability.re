@@ -9,9 +9,19 @@ import http.client
 
 
 def slugify(date, title):
-    """Very naive slugify function."""
+    """
+    Very naive slugify function.
+
+    >>> slugify("2020-10-02", "This is a title")
+    'content/links/2020-10-02-this-is-a-title.md'
+
+    >>> slugify("2020-10-02", "It's a title")
+    'content/links/2020-10-02-its-a-title.md'
+
+    """
     slug = title.lower()
     slug = slug.replace(" ", "-")
+    slug = slug.replace("'", "")
     date = date[:10]
     return f"content/links/{date}-{slug}.md"
 

@@ -1,6 +1,12 @@
 name: Github Pages
 
-on: push
+on:
+  push:
+    paths-ignore:
+      - 'CODE_OF_CONDUCT.md'
+      - 'CONTRIBUTING.md'
+      - 'LICENSE'
+      - 'README.md'
 
 jobs:
   deploy:

@@ -18,10 +18,15 @@ def slugify(date, title):
     >>> slugify("2020-10-02", "It's a title")
     'content/links/2020-10-02-its-a-title.md'
 
+    >>> slugify("2020-10-02", "Under Deconstruction: The State of Shopify’s Monolith")
+    'content/links/2020-10-02-under-deconstruction-the-state-of-shopifys-monolith.md'
+
     """
     slug = title.lower()
     slug = slug.replace(" ", "-")
     slug = slug.replace("'", "")
+    slug = slug.replace(":", "")
+    slug = slug.replace("’", "")
     date = date[:10]
     return f"content/links/{date}-{slug}.md"
 

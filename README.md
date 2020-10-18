@@ -17,6 +17,14 @@ There are 2 kind of contributions for this project:
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
+## Publishing workflow
+
+This is a diagram of the events (green dots) and the workflow followed by the content shared by users
+
+![Publishing workflow](static/img/rr-diagram.png)
+
+For more details about this project please see these [slides from the SRE Paris Meetup](https://github.com/sre-paris/meetups/blob/master/meetups/%237/reliability-report.pdf).
+
 ## Dev & Build
 
 If you want to test changes or build a local copy of this site you'll to install [Hugo](https://gohugo.io/getting-started/quick-start/), run:

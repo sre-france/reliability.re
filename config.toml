@@ -10,6 +10,9 @@ theme = "hyde"
 [Menus]
   main = [
     {Name = "Contributing", URL = "/contribute/"},
+    {Name = "Github", URL = "https://github.com/sre-paris/reliability.re"},
+    {Name = "Twitter", URL = "https://twitter.com/ReliabilityR"},
+    {Name = "Telegram", URL = "https://t.me/ReliabilityReport"}
   ]
 
 [deployment]

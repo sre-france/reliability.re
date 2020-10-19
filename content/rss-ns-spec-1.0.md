@@ -18,6 +18,7 @@ This namespace is an extension for the Reliability Report website following the 
 
 * `<rr:github>` Github's username of the item's curator (just the login name not the URL to the profile page).
 * `<rr:twitter>` Twitter's username of the item's curator (just the login name not the URL to the profile page).
+* `<rr:hashtags>` Hashtags that can be used to improve sharing on social media
 * `<rr:plain>` A plain-text version of the item's curated content.
 
 ## Example
@@ -40,6 +41,7 @@ This namespace is an extension for the Reliability Report website following the 
       <description>How to debug Go programs using &lt;b&gt;eBPF&lt;/b&gt;</description>
       <rr:github>pabluk</rr:github>
       <rr:twitter>pabluk</rr:twitter>
+      <rr:hashtags>debugging,go,eBPF,linux</rr:hashtags>
       <rr:plain>How to debug Go programs using eBPF</rr:plain>
     </item>
   </channel>

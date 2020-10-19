@@ -38,6 +38,7 @@
       <description>{{ .Content | html }}</description>
       {{ with .Params.github_username }}<rr:github>{{.}}</rr:github>{{end}}
       {{ with .Params.twitter_username }}<rr:twitter>{{.}}</rr:twitter>{{end}}
+      {{ with .Params.hashtags }}<rr:hashtags>{{.}}</rr:hashtags>{{end}}
       <rr:plain>{{ .Plain }}</rr:plain>
     </item>
     {{ end }}

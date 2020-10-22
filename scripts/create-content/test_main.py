@@ -12,14 +12,14 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
-    def test_single_quoute(self):
+    def test_single_quote(self):
         date = "2020-10-02"
         title = "It's a title"
         expected = "content/links/2020-10-02-its-a-title.md"
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
-    def test_single_quoute_utf(self):
+    def test_single_quote_utf(self):
         date = "2020-10-02"
         title = "Under Deconstruction: The State of Shopify’s Monolith"
         expected = "content/links/2020-10-02-under-deconstruction-the-state-of-shopifys-monolith.md"

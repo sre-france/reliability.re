@@ -11,6 +11,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-18.04
+    outputs:
+      # This var is set by peaceiris/actions-gh-pages only when there is new content
+      # or commits on the gh-pages branch
+      dst_sha: ${{ steps.pages.outputs.dst_sha }}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -25,8 +29,37 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@7e55c73 #514
+        if: github.ref == 'refs/heads/main' # avoid publishing other branches
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+
+  # This job is only executed if there was a commit on the precedent Deploy step
+  notify:
+    runs-on: ubuntu-18.04
+    needs: deploy
+    if: needs.deploy.outputs.dst_sha
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # Check out the generated JSON file and put it on the current workspace
+      # and set the variable json-post with the filename to be used for other
+      # scripts
+      - name: Get new JSON content file
+        id: new-content
+        run: |
+          echo ${{ needs.deploy.outputs.dst_sha }}
+          json_post=$(./bin/extract-json-file.sh ${{ needs.deploy.outputs.dst_sha }})
+          echo ::set-output name=json-post::$json_post
+
+      - name: Post on Telegram
+        run: |
+          echo "Posting content to Telegram from ${{ steps.new-content.outputs.json-post }}"
+
+      - name: Post on Twitter
+        run: |
+          echo "Posting content Twitter from ${{ steps.new-content.outputs.json-post }}"

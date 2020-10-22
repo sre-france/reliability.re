@@ -15,6 +15,9 @@ theme = "hyde"
     {Name = "Telegram", URL = "https://t.me/ReliabilityReport"}
   ]
 
+[outputs]
+  page = ["html", "json"]
+
 [deployment]
 order = [".png$", ".jpg$", ".gif$", ".svg$"]
 

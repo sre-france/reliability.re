@@ -1,0 +1,1 @@
+{{ dict "id" .Permalink "title" .Title "link" .Params.link "date" .Date "content" .Content "plain" .Plain "github_username" .Params.github_username "twitter_username" .Params.twitter_username "hashtags" .Params.hashtags | jsonify }}

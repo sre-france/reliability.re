@@ -1,0 +1,11 @@
+{
+  "content": "<p>Another feedback on RoR application migration @ Shopify with a long paper explaining the different steps / challenges (showing a few hints / IRL examples).</p>\n<p>It&rsquo;s an interesting reading, since the question of Monolith vs modular applications is not <em>easy</em> to answer and there is <strong>no generic</strong> method to <em>solve</em> it.</p>\n<blockquote>\n<p>So, we developed a new tool called Packwerk to analyze static constant references. [&hellip;] We’re planning to make Packwerk open source soon. Stay tuned!</p>\n</blockquote>\n<p>I&rsquo;m definitely looking for to see how they proceed and why not try to make it language agnostic.</p>\n",
+  "date": "2020-10-02T08:00:06Z",
+  "github_username": "tormath1",
+  "hashtags": null,
+  "id": "https://reliability.re/links/2020-10-02-under-deconstruction-the-state-of-shopifys-monolith/",
+  "link": "https://engineering.shopify.com/blogs/engineering/shopify-monolith",
+  "plain": "Another feedback on RoR application migration @ Shopify with a long paper explaining the different steps / challenges (showing a few hints / IRL examples).\nIt&rsquo;s an interesting reading, since the question of Monolith vs modular applications is not easy to answer and there is no generic method to solve it.\n So, we developed a new tool called Packwerk to analyze static constant references. [&hellip;] We’re planning to make Packwerk open source soon. Stay tuned!\n I&rsquo;m definitely looking for to see how they proceed and why not try to make it language agnostic.\n",
+  "title": "Under Deconstruction: The State of Shopify’s Monolith",
+  "twitter_username": "tormath1"
+}

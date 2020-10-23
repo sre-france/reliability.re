@@ -1,0 +1,11 @@
+{
+  "content": "<p>This succinct article from the <a href=\"https://www.honeycomb.io/blog/\">Honeycomb blog</a> is a great starting point to understand the fundamentals of Observability, like metrics, logs, traces and structured events, as well as the concepts of context, dimensionality and cardinality. It also includes additional links for further reading about #o11y and distributed tracing.</p>\n",
+  "date": "2020-10-09T06:51:43Z",
+  "github_username": "pabluk",
+  "hashtags": null,
+  "id": "https://reliability.re/links/2020-10-09-observability-101-terminology-and-concepts/",
+  "link": "https://www.honeycomb.io/blog/observability-101-terminology-and-concepts/",
+  "plain": "This succinct article from the Honeycomb blog is a great starting point to understand the fundamentals of Observability, like metrics, logs, traces and structured events, as well as the concepts of context, dimensionality and cardinality. It also includes additional links for further reading about #o11y and distributed tracing.\n",
+  "title": "Observability 101: Terminology and Concepts",
+  "twitter_username": "pabluk"
+}

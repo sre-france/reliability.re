@@ -1,0 +1,5 @@
+<em>From</em> https://www.honeycomb.io/blog/observability-101-terminology-and-concepts/
+
+This succinct article from the <a href="https://www.honeycomb.io/blog/">Honeycomb blog</a> is a great starting point to understand the fundamentals of Observability, like metrics, logs, traces and structured events, as well as the concepts of context, dimensionality and cardinality. It also includes additional links for further reading about #o11y and distributed tracing.
+
+<em>Shared by <a href="https://github.com/pabluk">@pabluk</a> via reliability.re</em>

@@ -1,0 +1,5 @@
+<em>From</em> https://www.example.com/an-example/
+
+This was an very interesting talk, providing a great introduction to Chaos Engineering concepts, good advice with Do’s and Don’ts and a clear path to reliability (Scan, Baseline, Analyze & Plan, Harden and Report) by Kolton Andrus from <a href="https://www.gremlin.com/">Gremlin, Inc</a>. Don’t hesitate to register to the #ChaosConf there are still 2 days full of interesting topics to come!
+
+<em>Shared by <a href="https://github.com/pabluk">@pabluk</a> via reliability.re</em>

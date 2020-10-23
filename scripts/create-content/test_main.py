@@ -25,6 +25,13 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
+    def test_question_mark(self):
+        date = "2020-10-02"
+        title = "how they test ?"
+        expected = "content/links/2020-10-02-how-they-test.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -11,10 +11,17 @@ import http.client
 def slugify(date, title):
     """Very naive slugify function."""
     slug = title.lower()
-    slug = slug.replace(" ", "-")
+    # Remove stranger chars
     slug = slug.replace("'", "")
     slug = slug.replace(":", "")
     slug = slug.replace("’", "")
+    slug = slug.replace("?", "")
+
+    # Remove leading and trailing whitespaces
+    slug = slug.strip()
+    # Replace spaces with "-"'s for cleaner URLs
+    slug = slug.replace(" ", "-")
+
     date = date[:10]
     return f"content/links/{date}-{slug}.md"
 

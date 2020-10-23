@@ -1,0 +1,5 @@
+<em>From</em> https://www.example.com/an-example/
+
+This is the content.
+
+<em>Shared by <a href="https://github.com/pabluk">@pabluk</a> via reliability.re</em>

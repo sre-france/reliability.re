@@ -59,7 +59,9 @@ jobs:
       - name: Post on Telegram
         run: |
           echo "Posting content to Telegram from ${{ steps.new-content.outputs.json-post }}"
+          ./scripts/post-to-telegram/main.py ${{ steps.new-content.outputs.json-post }}
 
       - name: Post on Twitter
         run: |
           echo "Posting content Twitter from ${{ steps.new-content.outputs.json-post }}"
+          ./scripts/post-to-twitter/main.py ${{ steps.new-content.outputs.json-post }}

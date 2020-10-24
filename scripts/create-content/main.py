@@ -58,8 +58,8 @@ def main(filename):
     if twitter_username:
         content += "twitter_username: %s\n" % twitter_username
 
-    hashtags = data["issue"]["hashtags"]
-    content += "hashtags: %s\n" % ",".join(hashtags)
+    #  hashtags = data["issue"]["hashtags"]
+    #  content += "hashtags: %s\n" % ",".join(hashtags)
 
     body = data["issue"]["body"]
 

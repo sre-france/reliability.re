@@ -63,11 +63,15 @@ def main(filename):
     url = body.splitlines()[0].replace("url: ", "")
     content += "link: %s\n" % url
 
-    hashtags = body.splitlines()[1].replace("hashtags: ","")
-    content += "hashtags: %s\n" % hashtags
+    if not "hashtags:" in body.splitlines()[1]:
+        description = "\n".join(body.splitlines()[2:])
+        content += "---\n%s\n" % description
+    else:
+        hashtags = body.splitlines()[1].replace("hashtags: ","")
+        content += "hashtags: %s\n" % hashtags
+        description = "\n".join(body.splitlines()[3:])
+        content += "---\n%s\n" % description
 
-    description = "\n".join(body.splitlines()[3:])
-    content += "---\n%s\n" % description
 
     post_filename = slugify(created_at, title)
     print(post_filename)

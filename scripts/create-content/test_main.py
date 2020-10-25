@@ -48,7 +48,7 @@ class TestMain(unittest.TestCase):
                     "user": {
                         "login": "pabluk"
                     },
-                    "body": "url: https://example.com\r\n---\r\nMarkdown content..."
+                    "body": "url: https://example.com\r\nhashtags: #hash1,#hash2\r\n---\r\nMarkdown content..."
                 }
             }"""
         expected = """content/links/2020-09-12-first-article.md
@@ -58,6 +58,7 @@ date: 2020-09-12T11:19:56Z
 github_username: pabluk
 twitter_username: pabluk
 link: https://example.com
+hashtags: #hash1,#hash2
 ---
 Markdown content...
 

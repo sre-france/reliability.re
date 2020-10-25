@@ -63,7 +63,7 @@ def main(filename):
     url = body.splitlines()[0].replace("url: ", "")
     content += "link: %s\n" % url
 
-    hashtags = body.splitlines()[1].replace("hashtags:","")
+    hashtags = body.splitlines()[1].replace("hashtags: ","")
     content += "hashtags: %s\n" % hashtags
 
     description = "\n".join(body.splitlines()[3:])

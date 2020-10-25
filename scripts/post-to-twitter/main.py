@@ -71,6 +71,11 @@ def format_tweets(payload):
         link=payload["link"], username=payload["twitter_username"]
     )
 
+    if "hashtags" in payload and payload["hashtags"]:
+        #hashtags: "#hash1,#hash2"
+        #result: "#hash1 #hash2"
+        ending = ending + " " + payload["hashtags"].replace(" ","").replace(","," ")
+
     placeholder = " […]"
     current_line_length = 0
     line = []

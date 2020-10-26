@@ -58,16 +58,20 @@ def main(filename):
     if twitter_username:
         content += "twitter_username: %s\n" % twitter_username
 
-    #  hashtags = data["issue"]["hashtags"]
-    #  content += "hashtags: %s\n" % ",".join(hashtags)
-
     body = data["issue"]["body"]
 
     url = body.splitlines()[0].replace("url: ", "")
     content += "link: %s\n" % url
 
-    description = "\n".join(body.splitlines()[2:])
-    content += "---\n%s\n" % description
+    if not "hashtags:" in body.splitlines()[1]:
+        description = "\n".join(body.splitlines()[2:])
+        content += "---\n%s\n" % description
+    else:
+        hashtags = body.splitlines()[1].replace("hashtags: ","")
+        content += "hashtags: %s\n" % hashtags
+        description = "\n".join(body.splitlines()[3:])
+        content += "---\n%s\n" % description
+
 
     post_filename = slugify(created_at, title)
     print(post_filename)

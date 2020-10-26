@@ -4,11 +4,9 @@ about: Submit content to be reviewed and published
 title: Content's title
 labels: content
 assignees: ''
-hashtags:
-  - hash1
-  - hash2
 ---
 
 url: https://example.com/
+hashtags: #hash1,#hash2
 ---
 Description with Markdown markup.

@@ -36,6 +36,13 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
+    def test_percent_sign(self):
+        date = "2020-10-02"
+        title = "Why is 100% reliability the wrong target?"
+        expected = "content/links/2020-10-02-why-is-100-reliability-the-wrong-target.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
 
 class TestMain(unittest.TestCase):
     @mock.patch("sys.stdout", new_callable=StringIO)

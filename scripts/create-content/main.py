@@ -69,7 +69,7 @@ def main(filename):
         content += "---\n%s\n" % description
     else:
         hashtags = body.splitlines()[1].replace("hashtags: ", "")
-        content += "hashtags: %s\n" % hashtags
+        content += 'hashtags: "%s"\n' % hashtags
         description = "\n".join(body.splitlines()[3:])
         content += "---\n%s\n" % description
 

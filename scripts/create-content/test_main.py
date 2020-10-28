@@ -65,7 +65,7 @@ date: 2020-09-12T11:19:56Z
 github_username: pabluk
 twitter_username: pabluk
 link: https://example.com
-hashtags: #hash1,#hash2
+hashtags: "#hash1,#hash2"
 ---
 Markdown content...
 

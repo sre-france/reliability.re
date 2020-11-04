@@ -43,6 +43,13 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
+    def test_em_dash_and_ellipsis(self):
+        date = "2020-10-02"
+        title = "SLO — From Nothing to… Production"
+        expected = "content/links/2020-10-02-slo-from-nothing-to-production.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
 
 class TestMain(unittest.TestCase):
     @mock.patch("sys.stdout", new_callable=StringIO)

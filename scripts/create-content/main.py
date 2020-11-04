@@ -17,9 +17,11 @@ def slugify(date, title):
     slug = slug.replace("’", "")
     slug = slug.replace("?", "")
     slug = slug.replace("%", "")
+    slug = slug.replace("—", "")
+    slug = slug.replace("…", "")
 
-    # Remove leading and trailing whitespaces
-    slug = slug.strip()
+    # Remove leading, trailing and duplicated whitespaces
+    slug = " ".join(slug.split())
     # Replace spaces with "-"'s for cleaner URLs
     slug = slug.replace(" ", "-")
 

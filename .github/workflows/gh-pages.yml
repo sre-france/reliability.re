@@ -68,11 +68,19 @@ jobs:
           echo ::set-output name=json-post::$json_post
 
       - name: Post on Telegram
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           echo "Posting content to Telegram from ${{ steps.new-content.outputs.json-post }}"
           ./scripts/post-to-telegram/main.py ${{ steps.new-content.outputs.json-post }}
 
       - name: Post on Twitter
+        env:
+          TWITTER_ACCESS_TOKEN_KEY: ${{ secrets.TWITTER_ACCESS_TOKEN_KEY }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
+          TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
         run: |
           echo "Posting content Twitter from ${{ steps.new-content.outputs.json-post }}"
           ./scripts/post-to-twitter/main.py ${{ steps.new-content.outputs.json-post }}

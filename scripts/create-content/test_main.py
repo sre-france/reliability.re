@@ -50,6 +50,13 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
+    def test_comma_punctuation(self):
+        date = "2021-03-09"
+        title = "Everything is broken, and it’s okay"
+        expected = "content/links/2021-03-09-everything-is-broken-and-its-okay.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
 
 class TestMain(unittest.TestCase):
     @mock.patch("sys.stdout", new_callable=StringIO)
